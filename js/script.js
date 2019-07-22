@@ -9,15 +9,11 @@ let quotes = [
     {
         quote: "Be yourself; everyone else is already taken.",
         source: 'Oscar Wilde',
-        citation: '',
-        year: '',
         tags: '#inspiration',
     },
     {
         quote: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
         source: 'Albert Einstein',
-        citation: '',
-        year: '',
         tags: '#philosophy',
 
     },
@@ -52,8 +48,6 @@ let quotes = [
     {
         quote: "Don't cry because it's over, smile because it happened.",
         source: 'Doctor Seuss',
-        citation: '',
-        year: '',
         tags: '#inspiration',
     },
 ];
@@ -99,12 +93,12 @@ function printQuote(){
     html += "<p class='source'>" + quote.source;
 
     // If there is a citation, it is added to the html string
-    if (quote.citation !== ''){
+    if (quote.citation){
         let citationString = "<span class='citation'>" + quote.citation + "</span>";
         html += citationString;
     }
     // If there is a year, it is added to the html string
-    if (!quote.year !== ''){
+    if (quote.year){
         let yearString = "<span class='year'>" + quote.year + "</span>";
         html += yearString;
     }
