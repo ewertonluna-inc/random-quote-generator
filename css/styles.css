@@ -66,6 +66,14 @@ body {
   font-style: normal;
 }
 
+.tag {
+  font-style: normal;
+}
+
+.tag:before {
+  content: ". "
+}
+
 .year:before {
   content: ", ";
   font-style: normal;
