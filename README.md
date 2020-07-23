@@ -1,4 +1,4 @@
-# Techdegree Project 1
+# Random Quote Generator
  My first TechDegree Project.
 
 For this project, I created an app that displays random famous quotes each time a button is clicked. 
